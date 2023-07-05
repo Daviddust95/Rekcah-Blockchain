@@ -42,7 +42,11 @@ nonce++;
 timestamp = Date.now()
 
 hash = cryptoHash(timestamp, lastHash, difficulty, nonce)
-} while (hexToBinary(hash).substring(0,difficulty))
+} 
+while (hexToBinary(hash).substring(0,difficulty))
+
+return new this (timestamp, lastHash, data, difficulty, nonce, hash)
+
 
 }
 
