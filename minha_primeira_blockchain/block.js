@@ -21,7 +21,13 @@ static genesis () {
 
     return new this(GENESIS_DATA);
 
+}
 
+static mineBlock({  lastBlock , data  }) {
+
+const lastHash = lastBlock.hash;
+
+let hash, timestamp;
 
 }
 
