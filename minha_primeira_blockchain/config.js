@@ -1,4 +1,5 @@
 
+const MINE_RATE = 1000
 
 const MINING_REWARD = 50;
 
@@ -20,6 +21,7 @@ module.exports = {
 GENESIS_DATA,
 STARTING_BALANCE,
 MINING_REWARD,
+MINE_RATE
 
 
 

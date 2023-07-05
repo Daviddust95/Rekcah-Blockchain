@@ -7,7 +7,7 @@
 //Hash é uma síntese      função hash  >>
 
 // quantidade maior de zeros = dificuldade de mineração do algoritmo
-const {GENESIS_DATA} = require('./config')
+const {GENESIS_DATA, MINE_RATE} = require('./config')
 class Block {
 
     constructor({ data, hash, nonce, difficulty, timestamp, lasthash }) { 
@@ -50,7 +50,14 @@ return new this (timestamp, lastHash, data, difficulty, nonce, hash)
 
 }
 
+static adjustDifficulty({originalBlock, timestamp}) {
 
+const (difficulty) = originalBlock;
+
+if (difficulty < 1) return 1;
+if ((timestamp - originalBlock.timestamp)>MINE_RATE) return difficulty -1 ;
+
+}
 
 }
 const GENESIS_DATA = {
