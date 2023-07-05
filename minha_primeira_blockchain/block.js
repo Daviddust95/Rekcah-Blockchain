@@ -32,7 +32,21 @@ static mineBlock({  lastBlock , data  }) {
 const lastHash = lastBlock.hash;
 
 let hash, timestamp;
+
+let (difficulty) = lastBlock;
+
+let nonce = 0;
+
+do {
+nonce++;
+timestamp = Date.now()
+
+hash = cryptoHash(timestamp, lastHash, difficulty, nonce)
+} while (hexToBinary(hash).substring(0,difficulty))
+
 }
+
+
 
 }
 const GENESIS_DATA = {
