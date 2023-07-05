@@ -40,7 +40,7 @@ let nonce = 0;
 do {
 nonce++;
 timestamp = Date.now()
-
+difficulty = Block.adjustDifficulty({originalBlock: lastBlock, timestamp}) ;
 hash = cryptoHash(timestamp, lastHash, difficulty, nonce)
 } 
 while (hexToBinary(hash).substring(0,difficulty))
@@ -52,11 +52,13 @@ return new this (timestamp, lastHash, data, difficulty, nonce, hash)
 
 static adjustDifficulty({originalBlock, timestamp}) {
 
-const (difficulty) = originalBlock;
+const {difficulty} = originalBlock;
 
 if (difficulty < 1) return 1;
+
 if ((timestamp - originalBlock.timestamp)>MINE_RATE) return difficulty -1 ;
 
+return difficulty + 1
 }
 
 }
