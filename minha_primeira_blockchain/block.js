@@ -7,6 +7,8 @@
 //Hash é uma síntese      função hash  >>
 
 // quantidade maior de zeros = dificuldade de mineração do algoritmo
+
+
 const {GENESIS_DATA, MINE_RATE} = require('./config')
 class Block {
 
