@@ -7,7 +7,7 @@
 //Hash é uma síntese      função hash  >>
 
 // quantidade maior de zeros = dificuldade de mineração do algoritmo
-const {GENESIS_DATA} = require{'../'}
+const {GENESIS_DATA} = require('./config')
 class Block {
 
     constructor({ data, hash, nonce, difficulty, timestamp, lasthash }) { 

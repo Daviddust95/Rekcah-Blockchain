@@ -15,3 +15,12 @@ const GENESIS_DATA = {
     nonce: 0,
     data: []
 };
+
+module.exports = {
+GENESIS_DATA,
+STARTING_BALANCE,
+MINING_REWARD,
+
+
+
+}
