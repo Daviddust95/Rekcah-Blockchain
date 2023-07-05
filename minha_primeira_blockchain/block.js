@@ -42,4 +42,4 @@ const GENESIS_DATA = {
     difficulty: INITIAL_DIFFICULTY,
     nonce: 0,
     data: []
-}
+};
