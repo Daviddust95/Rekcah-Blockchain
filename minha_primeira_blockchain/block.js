@@ -4,9 +4,13 @@
 
 //trabalhar com esses dados.
 
+//Hash é uma síntese      função hash  >>
+
+// quantidade maior de zeros = dificuldade de mineração do algoritmo
+
 class Block {
 
-    constructor({ data, hash, nonce, difficulty,timestamp,lasthash }) { 
+    constructor({ data, hash, nonce, difficulty, timestamp, lasthash }) { 
 
 this.data = data;
 
@@ -28,7 +32,6 @@ static mineBlock({  lastBlock , data  }) {
 const lastHash = lastBlock.hash;
 
 let hash, timestamp;
-
 }
 
 }
