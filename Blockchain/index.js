@@ -10,7 +10,7 @@ this.chain =[Block.genesis()];
 
 }
 
-addBlock({}) {
+addBlock({data}) {
 
 const newBlock = Block.mineBlock ({
 lastBlock: this.chain.chain[this.chain.length -1],
@@ -24,4 +24,4 @@ this.chain.push(newBlock)
 }
 
 
-
+module.exports = Blockchain

@@ -9,7 +9,7 @@
 // quantidade maior de zeros = dificuldade de mineração do algoritmo
 
 
-const {GENESIS_DATA, MINE_RATE} = require('./config')
+const {GENESIS_DATA, MINE_RATE} = require('../config')
 class Block {
 
     constructor({ data, hash, nonce, difficulty, timestamp, lasthash }) { 
@@ -35,7 +35,7 @@ const lastHash = lastBlock.hash;
 
 let hash, timestamp;
 
-let (difficulty) = lastBlock;
+let{difficulty} = lastBlock;
 
 let nonce = 0;
 
@@ -64,11 +64,6 @@ return difficulty + 1
 }
 
 }
-const GENESIS_DATA = {
-    timestamp: 1,
-    lasthash: '----------',
-    hash: "abcde",
-    difficulty: INITIAL_DIFFICULTY,
-    nonce: 0,
-    data: []
-};
+
+
+module.exports = Block
