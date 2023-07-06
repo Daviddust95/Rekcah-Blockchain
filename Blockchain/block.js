@@ -66,4 +66,4 @@ return difficulty + 1
 }
 
 
-module.exports = Block
+module.exports = Block  
