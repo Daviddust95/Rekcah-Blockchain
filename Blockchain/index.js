@@ -13,6 +13,7 @@ this.chain =[Block.genesis()];
 addBlock({data}) {
 
 const newBlock = Block.mineBlock ({
+    
 lastBlock: this.chain.chain[this.chain.length -1],
 data
 })
