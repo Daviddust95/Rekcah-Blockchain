@@ -2,7 +2,7 @@
   "json.schemaDownload.enable": "true",
   "name": "minha_primeira_blockchain",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,9 @@
   "author": "Alisson_David_de_Melo",
   "license": "ISC",
   "dependencies": {
-    "cors": "2.8.5",
+    "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
-    "express": "4.16.3",
-    "hex-to-binary": "1.0.1"
+    "express": "^4.16.3",
+    "hex-to-binary": "^1.0.1"
   }
 }
