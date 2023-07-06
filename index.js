@@ -1,8 +1,17 @@
-const express = require ('express');
+// const express = require ('express');
 
-const Blockchain = require('./Blockchain');
+import cors from 'cors'
+import express, {json} from 'express'
+import Blockchain from './Blockchain/blockchain.js'
+
 
 const app = express()
+
+
+app.use(json())
+app.use(cors())
+
+//const Blockchain = require('./Blockchain');
 
 const blockchain = new Blockchain ();
 

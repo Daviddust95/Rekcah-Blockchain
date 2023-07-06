@@ -17,12 +17,22 @@ const GENESIS_DATA = {
     data: []
 };
 
-module.exports = {
+
+    /*module.exports = {
+    GENESIS_DATA,
+    MINE_RATE,
+    STARTING_BALANCE,
+    MINING_REWARD,
+    
+    };
+    */
+
+export {
 GENESIS_DATA,
 STARTING_BALANCE,
 MINING_REWARD,
 MINE_RATE
 
-
-
 }
+
+
