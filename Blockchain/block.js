@@ -8,27 +8,30 @@
 
 // quantidade maior de zeros = dificuldade de mineração do algoritmo
 
+import hexToBinary from 'hex-to-binary';
+import {GENESIS_DATA, MINE_RATE} from '../config.js';
+import cryptoHash from '../util/crypto-hash.js';
 
-const {GENESIS_DATA, MINE_RATE} = require('../config')
-const {cryptoHash} = require('../util')
+
+/*
+
 const hexToBinary = require('hex-to-binary');
+{ GENESIS_DATA, MINE_RATE } = require('../config');
+const { cryptoHash } = require('../util');
+*/
 class Block {
+    constructor({ timestamp, lasthash, hash, data, nonce, difficulty }) { 
+        this.timestamp = timestamp;
+        this.lasthash = lasthash;
+        this.hash = hash;
+        this.data = data;
+        this.nonce = nonce;
+        this.difficulty = difficulty;
 
-    constructor({ data, hash, nonce, difficulty, timestamp, lasthash }) { 
-
-this.data = data;
-
-this.hash = hash;
-this.lasthash = lasthash
-this.nonce = nonce;
-this.difficulty = difficulty;
-this.timestamp = timestamp;
 }
 
 static genesis () {
-
     return new this(GENESIS_DATA);
-
 }
 
 static mineBlock({  lastBlock , data  }) {
@@ -67,5 +70,6 @@ return difficulty + 1
 
 }
 
+export default Block;
 
-module.exports = Block  
+//module.exports = Block ; 

@@ -1,4 +1,6 @@
-const Block = require('./block');
+import Block from './block.js';
+
+//const Block = require('./block');
 
 class Blockchain {
 
@@ -24,5 +26,6 @@ this.chain.push(newBlock)
 
 }
 
+export default Blockchain
 
-module.exports = Blockchain
+//module.exports = Blockchain;
