@@ -2,7 +2,7 @@
 
 import cors from 'cors'
 import express, {json} from 'express'
-import Blockchain from './Blockchain/blockchain.js'
+import Blockchain from './Blockchain/blockchain'
 
 
 const app = express()
