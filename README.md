@@ -1,4 +1,4 @@
-# Projeto de Blockchain em Node.js
+# Blockchain em Node.js
 
 Este é um projeto de blockchain simples em Node.js. Ele implementa uma blockchain e fornece uma API básica para interagir com a blockchain.
 
