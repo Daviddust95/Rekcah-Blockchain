@@ -51,7 +51,7 @@ Minerar um Bloco
 - ```shell
   curl -X POST -H "Content-Type: application/json" -d '{ "data": "Seus dados aqui" }' http://localhost:3000/api/mine
 
-Aviso
+## Aviso
 Este projeto ainda está em fase de desenvolvimento e implementação. Não é recomendado para uso em produção. Certifique-se de entender a tecnologia antes de usá-la.
 ## Contato
 Se você tiver alguma dúvida, comentário ou feedback, sinta-se à vontade para entrar em contato:
