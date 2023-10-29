@@ -2,6 +2,11 @@
 
 Este é um projeto de blockchain simples em Node.js. Ele implementa uma blockchain e fornece uma API básica para interagir com a blockchain.
 
+## Tecnologias Utilizadas
+
+- JAVASCRIPT
+- NODE.JS
+
 ## Pré-requisitos
 
 Antes de começar, certifique-se de ter o Node.js instalado na sua máquina.
