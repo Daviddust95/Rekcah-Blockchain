@@ -6,18 +6,18 @@ class CryptoBlock {
         this.timestamp = timestamp;
         this.data = data;
         this.previousHash = previousHash;
-        this.hash = this.cumputedHash();
+        this.hash = this.computedHash();
         this.nonce = 0;
     }
 
-    cumputedHash() {
+    computedHash() {
         return SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
     }
 
     proofOfWork(difficulty) {
         while (this.hash.substring(0, difficulty) !== Array(difficulty + 1).join("0")){
             this.nonce++;
-            this.hash = this.cumputedHash();
+            this.hash = this.computedHash();
         }
     }
 }
@@ -47,7 +47,7 @@ class CryptoBlockchain {
             const currentBlock = this.blockchain[i];
             const previousBlock = this.blockchain[i - 1];
 
-            if (currentBlock.hash !== currentBlock.calculateHash()) {
+            if (currentBlock.hash !== currentBlock.computedHash()) {
                 return false;
             }
 
