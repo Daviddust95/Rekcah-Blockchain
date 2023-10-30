@@ -1,13 +1,29 @@
 # Blockchain em Node.js
 
-Este é um projeto de blockchain simples em Node.js. Ele implementa uma blockchain e fornece uma API básica para interagir com a blockchain.
+Rekcah Blockchain é uma implementação simples de uma blockchain em JavaScript, que utiliza o algoritmo de prova de trabalho (Proof of Work) para garantir a segurança da rede. Esta blockchain é construída com blocos contendo informações como índice, carimbo de data/hora, dados, um hash anterior e um hash atual, além de um valor de nonce para a prova de trabalho.
+
+## Conteúdo
+
+1. [Sobre](#sobre)
+2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+3. [Requisitos](#requisitos)
+4. [Instalação](#instalação)
+5. [Como Usar](#como-usar)
+6. [Contato](#contato)
+
+# Sobre
+
+O projeto "Blockchain em Node.js" é uma implementação de uma blockchain simples em JavaScript, construída com o objetivo de demonstrar os conceitos fundamentais por trás da tecnologia blockchain e como a prova de trabalho (Proof of Work) é usada para garantir a segurança da rede. Uma blockchain é uma estrutura de dados descentralizada que mantém um registro imutável de transações.
+
+## Capturas de Tela
+![Captura de tela 2023-10-29 215421](https://github.com/Daviddust95/Rekcah-Blockchain/assets/124353154/e2044210-1e56-4e99-9a32-2ba48616e8fd)
 
 ## Tecnologias Utilizadas
 
 - JAVASCRIPT
 - NODE.JS
 
-## Pré-requisitos
+## Requisitos
 
 Antes de começar, certifique-se de ter o Node.js instalado na sua máquina.
 
@@ -17,45 +33,19 @@ Antes de começar, certifique-se de ter o Node.js instalado na sua máquina.
 
 - ```shell
   git clone https://github.com/Daviddust95/Rekcah-Blockchain.git
-
 2.  Navegue até o diretório do projeto:
 - ```shell
-  cd blockchain-nodejs
-
-4.  Instale as dependências do projeto:
+   cd Rekcah-Blockchain
+3.  Instale as dependências do projeto:
 - ```shell
-  npm install express
-- ```shell
-  npm install cors
-## Uso
+  npm install crypto-js
+# Como usar
+## Minerar um Bloco
+Obter Blocos
 Para iniciar o servidor e usar a blockchain, execute o seguinte comando:
 - ```shell
-  npm start
-O servidor estará em execução em localhost:3000.
-
-## Rotas da API
-
-Obter Blocos
-Endpoint: /api/blocks
-
-Método: GET
-
-Descrição: Esta rota retorna a lista de todos os blocos na blockchain.
-
-## Minerar um Bloco
-Endpoint:
-/api/mine
-Método: POST
-Esta rota permite minerar um novo bloco na blockchain. Para minerar um bloco, envie um objeto JSON no formato { "data": "Seus dados aqui" }. O novo bloco conterá os dados fornecidos.
-Exemplo de Uso:
-
-Obter Blocos
-- ```shell
-  curl http://localhost:3000/api/blocks
-Minerar um Bloco
-- ```shell
-  curl -X POST -H "Content-Type: application/json" -d '{ "data": "Seus dados aqui" }' http://localhost:3000/api/mine
-
+  node blockchain.js
+A resposta será a nova mineração de um bloco pelos usuários.
 ## Aviso
 Este projeto ainda está em fase de desenvolvimento e implementação. Não é recomendado para uso em produção. Certifique-se de entender a tecnologia antes de usá-la.
 ## Contato
