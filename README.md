@@ -1,4 +1,5 @@
 # Blockchain em Node.js
+![Concluído](https://img.shields.io/badge/Conclu%C3%ADdo-Sim-brightgreen.svg)
 
 Rekcah Blockchain é uma implementação simples de uma blockchain em JavaScript, que utiliza o algoritmo de prova de trabalho (Proof of Work) para garantir a segurança da rede. Esta blockchain é construída com blocos contendo informações como índice, carimbo de data/hora, dados, um hash anterior e um hash atual, além de um valor de nonce para a prova de trabalho.
 
